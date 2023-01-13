@@ -1,0 +1,4 @@
+{
+  "extends": "@dgthus-ui/ts-config/base.json",
+  "include": ["src"]
+}
