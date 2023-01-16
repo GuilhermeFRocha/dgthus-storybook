@@ -26,9 +26,10 @@
   },
   "dependencies": {
     "@dgthus-ui/eslint-config": "*",
-    "@dgthus-ui/ts-config": "*",
     "@dgthus-ui/react": "*",
     "@dgthus-ui/tokens": "*",
+    "@dgthus-ui/ts-config": "*",
+    "phosphor-react": "^1.4.1",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

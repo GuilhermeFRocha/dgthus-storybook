@@ -5,7 +5,8 @@
       "cache": false
     },
     "build": {
-      "outputs": ["dist/**", "build/**"]
+      "outputs": ["dist/**", "storybook-static/**"],
+      "dependsOn": ["^build"]
     }
   }
 }
