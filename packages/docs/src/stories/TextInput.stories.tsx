@@ -7,7 +7,11 @@ export default {
   args: {},
 } as Meta<TextInputProps>;
 
-export const Primary: StoryObj<TextInputProps> = {};
+export const Primary: StoryObj<TextInputProps> = {
+  args: {
+    placeholder: "Type your name",
+  },
+};
 export const Disabled: StoryObj<TextInputProps> = {
   args: {
     disabled: true,

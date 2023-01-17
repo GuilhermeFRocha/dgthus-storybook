@@ -16,6 +16,17 @@ export const AvatarImage = styled(Avatar.Image, {
   borderRadius: "inherit",
 });
 
+export const AvatarDesc = styled("p", {
+  color: "$white100",
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  margin: 0,
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundColor: "$gray600",
+});
+
 export const AvatarFallback = styled(Avatar.Fallback, {
   width: "100%",
   height: "100%",

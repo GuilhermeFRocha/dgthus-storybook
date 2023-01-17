@@ -7,6 +7,18 @@ export default {
   component: Button,
   args: {
     children: "Ver todos",
+    variant: "primary",
+  },
+  argTypes: {
+    variant: {
+      options: ["primary", "secondary"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+    onClick: {
+      action: "click",
+    },
   },
 } as Meta<ButtonProps>;
 
