@@ -6,23 +6,15 @@ export default {
   component: Avatar,
 } as Meta<AvatarProps>;
 
-export const Primary: StoryObj<AvatarProps> = {
+export const Default: StoryObj<AvatarProps> = {
   args: {
-    src: "https://github.com/GuilhermeFRocha.png",
-    alt: "Guilherme Freitas",
-  },
-  argTypes: {
-    sizes: {
-      control: {
-        type: "select",
-      },
-      options: ["2xl", "4xl", "medium", "large"],
-    },
+    children: "GF",
   },
 };
 
-export const WithFallback: StoryObj<AvatarProps> = {
+export const WithImage: StoryObj<AvatarProps> = {
   args: {
-    children: "GF",
+    src: "https://github.com/GuilhermeFRocha.png",
+    alt: "Guilherme Freitas",
   },
 };

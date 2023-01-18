@@ -6,7 +6,6 @@ export const Box = styled("div", {
   backgroundColor: "$gray1100",
   padding: "$4",
   minWidth: 400,
-  minHeight: 70,
 });
 
 export interface BoxProps extends ComponentProps<typeof Box> {

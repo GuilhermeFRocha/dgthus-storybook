@@ -5,24 +5,29 @@ import {
   AvatarImage,
 } from "./styles";
 import { User } from "phosphor-react";
-import { ComponentProps, useMemo } from "react";
+import { ComponentProps, useMemo, useState } from "react";
 
 export interface AvatarProps extends ComponentProps<typeof AvatarImage> {}
 
 export function Avatar(props: AvatarProps | any) {
-  const initials = useMemo(() => {
-    const names = props.children.trim().split(" ");
-    const firstName = names.shift();
-    const lastName = names.pop();
-    const initialFirstName = firstName ? firstName[0] : "";
-    const initialLastName = lastName ? lastName[0] : "";
+  const [init, setInit] = useState("");
 
-    return `${initialFirstName}${initialLastName}`.toUpperCase();
-  }, [props.children]);
+  if (!props.src) {
+    useMemo(() => {
+      const names = props.children.trim().split(" ");
+      const firstName = names.shift();
+      const lastName = names.pop();
+      const initialFirstName = firstName ? firstName[0] : "";
+      const initialLastName = lastName ? lastName[0] : "";
+
+      return setInit(`${initialFirstName}${initialLastName}`.toUpperCase());
+    }, [props.children]);
+  }
+
   return (
     <AvatarContainer>
       <AvatarImage {...props} />
-      <AvatarDesc>{initials}</AvatarDesc>
+      <AvatarDesc>{init}</AvatarDesc>
       <AvatarFallback delayMs={600}>
         <User />
       </AvatarFallback>
