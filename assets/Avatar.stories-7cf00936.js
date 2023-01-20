@@ -1,0 +1,2 @@
+import{A as t}from"./index-47de1e06.js";import"./index-34e51894.js";import"./es.object.get-own-property-descriptor-64192e07.js";import"./index-75cd1920.js";import"./jsx-runtime-da4cfb3b.js";const s={title:"Data display/Avatar",component:t},m={args:{children:"GF"}},p={args:{src:"https://github.com/GuilhermeFRocha.png",alt:"Guilherme Freitas"}},c=["Default","WithImage"];export{m as Default,p as WithImage,c as __namedExportsOrder,s as default};
+//# sourceMappingURL=Avatar.stories-7cf00936.js.map
